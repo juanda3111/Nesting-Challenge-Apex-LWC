@@ -1,0 +1,60 @@
+<template>
+    <lightning-card title="Add a Widget" icon-name="custom:custom15">
+        <!-- <div class="slds-m-around_medium">
+            <p style="text-align: center;">
+                Widget for challenge {greeting} !
+            </p>
+
+
+                <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-id-1">
+                            <!<abbr class="slds-required" title="required">* </abbr>value
+                            <p>Widget Name</p>
+                        </label>
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-1" placeholder="Widget name…" required="" class="slds-input" />
+                    </div>
+                </div>
+               
+
+                <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="text-input-id-1">
+                            <!<abbr class="slds-required" title="required">* </abbr>value
+                            <p>Value</p>
+                        </label>
+                    
+                    <div class="slds-form-element__control">
+                        <input type="text" id="text-input-id-2" placeholder="Please write here your text…" required="" class="slds-input" />
+                    </div>
+                </div>
+               
+
+                <br>   
+                <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <div class="slds-checkbox">
+                            <!<abbr class="slds-required" title="required">*</abbr>
+                            <input type="checkbox" name="options" id="checkbox-unique-id-72" value="checkbox-unique-id-72" />
+                            <label class="slds-checkbox__label" for="checkbox-unique-id-72">
+                            <span class="slds-checkbox_faux"></span>
+                            <span class="slds-form-element__label">Is Properly Nested</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <br> 
+                <a class="slds-button slds-button_success" href="#">Add a Widget</a>
+
+        </div> -->
+
+        <lightning-record-form 
+            if:true={userData.data}
+            object-api-name={objectApiName}
+            fields={fields}
+            onsubmit={handleValidations}
+            onsuccess={handleSuccess}> 
+        </lightning-record-form>
+        
+    </lightning-card>
+</template>
