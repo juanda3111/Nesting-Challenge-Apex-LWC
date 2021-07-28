@@ -12,11 +12,7 @@ import Id from '@salesforce/user/Id';
 import getUserInfo from '@salesforce/apex/UserDetails.getUserInfo';
 
 export default class NestingChallenge extends LightningElement {
-  /**  greeting = '';
-
-    changeHandler(event){
-        this.greeting = event.target.value;
-    }*/
+ 
 
     objectApiName = WIDGET_OBJECT;
     fields = [NAME_FIELD, VALUE_FIELD, CHECKBOX_FIELD];
